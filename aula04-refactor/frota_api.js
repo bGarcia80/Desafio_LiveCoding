@@ -32,7 +32,7 @@ app.get ('/api/v1/veiculos/:id', (req, res) => {
 
 // 3. GET /api/v1/health - Mostrar o status da API
 app.get ('/api/v1/health', (req, res) => {
-	res.status(200).json({ status: "ONLINE", application: "BINARIO TECH API V1.1" });
+	res.status(200).json({ status: "ONLINE", application: "BINARIO TECH API V1.1", uptime: process.uptime(), memory: process.memoryUsage() });
 });
 
 // 4. POST /api/v1/veiculos - Cadastrar novo veiculo (Criacao)
