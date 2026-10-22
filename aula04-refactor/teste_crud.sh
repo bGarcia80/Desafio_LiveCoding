@@ -1,6 +1,11 @@
 #!/bin/bash
 
-API_URL="http://localhost:3000/api/v1/veiculos"
+set -e
+
+# Configuração dinâmica de Porta via parâmetros de linha de comando
+PORT=${1:-3004}
+
+API_URL="http://localhost:${PORT}/api/v1/veiculos"
 LOG_FILE="auditoria_finalizada.log"
 
 # Limpa o arquivo de log caso ele já exista e insere o cabeçalho
