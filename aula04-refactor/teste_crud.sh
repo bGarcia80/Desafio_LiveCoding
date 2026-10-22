@@ -1,7 +1,7 @@
 #!/bin/bash
 
 API_URL="http://localhost:3000/api/v1/veiculos"
-LOG_FILE="crud_result.log"
+LOG_FILE="auditoria_finalizada.log"
 
 # Limpa o arquivo de log caso ele já exista e insere o cabeçalho
 echo "=========================================" > "$LOG_FILE"
