@@ -30,7 +30,12 @@ app.get ('/api/v1/veiculos/:id', (req, res) => {
     res.status(200).json(veiculo);
 });
 
-// 3. POST /api/v1/veiculos - Cadastrar novo veiculo (Criacao)
+// 3. GET /api/v1/health - Mostrar o status da API
+app.get ('/api/v1/health', (req, res) => {
+	res.status(200).json({ status: "ONLINE", application: "BINARIO TECH API V1.1" });
+});
+
+// 4. POST /api/v1/veiculos - Cadastrar novo veiculo (Criacao)
 app.post('/api/v1/veiculos', (req, res) => {
     const { placa, montadora, modelo } = req.body;
     if (!placa || !montadora || !modelo) {
@@ -47,7 +52,7 @@ app.post('/api/v1/veiculos', (req, res) => {
     res.status(201).json(novoVeiculo);
 });
 
-// 4. PATCH /api/v1/veiculos/:id/status - Atualizar status do veiculo
+// 5. PATCH /api/v1/veiculos/:id/status - Atualizar status do veiculo
 app.patch('/api/v1/veiculos/:id/status', (req, res) => {
     const id = parseInt(req.params.id);
     const { status } = req.body;
@@ -64,7 +69,7 @@ app.patch('/api/v1/veiculos/:id/status', (req, res) => {
     res.status(200).json({ mensagem: "Status atualizado com sucesso!", veiculo });
 });
 
-// 5. DELETE /api/v1/veiculos/:id - Remover veiculo da frota
+// 6. DELETE /api/v1/veiculos/:id - Remover veiculo da frota
 app.delete('/api/v1/veiculos/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const index = veiculos.findIndex(v => v.id === id);
@@ -75,7 +80,7 @@ app.delete('/api/v1/veiculos/:id', (req, res) => {
     res.status(200).json({ mensagem: `Veiculo ID ${id} removido com sucesso.` });
 });
 
-// 6. PUT /api/v1/veiculos/:id - Substituir todos os dados de um veiculo
+// 7. PUT /api/v1/veiculos/:id - Substituir todos os dados de um veiculo
 app.put('api/v1/veiculos/:id', (req, res) => {
         const id = parseInt(req.params.id);
         const index = veiculos.findIndex(v => v.id === id);
