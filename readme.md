@@ -1,7 +1,7 @@
--------------------------------------------------------------------------
-					 BINÁRIO TECH - AULA 04
-                   Histórico de Versionamento
--------------------------------------------------------------------------
+### BINÁRIO TECH - AULA 04
+## Histórico de Versionamento
+
+=========================================================================
 
 NOME: Ana Lívia Paixão e Bruno Rodrigues Garcia
 E-MAIL: pessoal - analiviaany@gmail.com / brxnosong@gmail.com
