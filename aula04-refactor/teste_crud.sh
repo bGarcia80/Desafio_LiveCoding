@@ -4,7 +4,7 @@
 PORT=${1:-3004}
 
 API_URL="http://localhost:${PORT}/api/v1/veiculos"
-LOG_FILE="auditoria_finalizada.log"
+LOG_FILE="auditoria_final.log"
 
 # Limpa o arquivo de log caso ele já exista e insere o cabeçalho
 echo "=========================================" > "$LOG_FILE"

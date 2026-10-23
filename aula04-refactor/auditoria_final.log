@@ -1,11 +1,11 @@
 =========================================
-Iniciando testes CRUD - Fri Oct 23 11:14:52 AM UTC 2026
-API URL: http://localhost:3004/api/v1/veiculos
+Iniciando testes CRUD - Fri Oct 23 11:42:16 AM UTC 2026
+API URL: http://localhost:8080/api/v1/veiculos
 =========================================
 
 [1] Executando POST para cadastrar Veículo 1 (Volvo FH540)...
 {
-  "id": 4,
+  "id": 3,
   "placa": "DEF-5678",
   "montadora": "Volvo",
   "modelo": "FH540",
@@ -15,7 +15,7 @@ API URL: http://localhost:3004/api/v1/veiculos
 
 [2] Executando POST para cadastrar Veículo 2 (Iveco Stralis)...
 {
-  "id": 5,
+  "id": 4,
   "placa": "GHI-9012",
   "montadora": "Iveco",
   "modelo": "Stralis",
@@ -23,22 +23,12 @@ API URL: http://localhost:3004/api/v1/veiculos
 }
 
 
-[3] Executando PUT para atualizar todos os dados do Veículo ID 4...
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Error</title>
-</head>
-<body>
-<pre>Cannot PUT /api/v1/veiculos/4</pre>
-</body>
-</html>
+[3] Executando PUT para atualizar todos os dados do Veículo ID 3...
+{"id":3,"placa":"DEF-5678","montadora":"Volvo","modelo":"FH540","status":"EM MANUTENCAO"}
 
-
-[4] Executando DELETE para remover o Veículo ID 5...
+[4] Executando DELETE para remover o Veículo ID 4...
 {
-  "mensagem": "Veiculo ID 5 removido com sucesso."
+  "mensagem": "Veiculo ID 4 removido com sucesso."
 }
 
 
@@ -63,14 +53,7 @@ API URL: http://localhost:3004/api/v1/veiculos
     "placa": "DEF-5678",
     "montadora": "Volvo",
     "modelo": "FH540",
-    "status": "DISPONIVEL"
-  },
-  {
-    "id": 4,
-    "placa": "DEF-5678",
-    "montadora": "Volvo",
-    "modelo": "FH540",
-    "status": "DISPONIVEL"
+    "status": "EM MANUTENCAO"
   }
 ]
 
