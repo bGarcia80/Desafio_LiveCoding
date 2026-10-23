@@ -82,7 +82,7 @@ app.delete('/api/v1/veiculos/:id', (req, res) => {
 });
 
 // 7. PUT /api/v1/veiculos/:id - Substituir todos os dados de um veiculo
-app.put('api/v1/veiculos/:id', (req, res) => {
+app.put('/api/v1/veiculos/:id', (req, res) => {
         const id = parseInt(req.params.id);
         const index = veiculos.findIndex(v => v.id === id);
 
