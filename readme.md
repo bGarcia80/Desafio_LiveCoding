@@ -1,5 +1,5 @@
-### BINÁRIO TECH - AULA 04
-## Histórico de Versionamento
+## BINÁRIO TECH - AULA 04
+### Histórico de Versionamento
 
 =========================================================================
 
