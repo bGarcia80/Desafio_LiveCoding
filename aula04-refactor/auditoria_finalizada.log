@@ -1,10 +1,11 @@
 =========================================
-Iniciando testes CRUD - Thu Oct 22 07:34:03 PM UTC 2026
+Iniciando testes CRUD - Fri Oct 23 11:14:52 AM UTC 2026
+API URL: http://localhost:3004/api/v1/veiculos
 =========================================
 
 [1] Executando POST para cadastrar Veículo 1 (Volvo FH540)...
 {
-  "id": 7,
+  "id": 4,
   "placa": "DEF-5678",
   "montadora": "Volvo",
   "modelo": "FH540",
@@ -14,7 +15,7 @@ Iniciando testes CRUD - Thu Oct 22 07:34:03 PM UTC 2026
 
 [2] Executando POST para cadastrar Veículo 2 (Iveco Stralis)...
 {
-  "id": 8,
+  "id": 5,
   "placa": "GHI-9012",
   "montadora": "Iveco",
   "modelo": "Stralis",
@@ -22,4 +23,57 @@ Iniciando testes CRUD - Thu Oct 22 07:34:03 PM UTC 2026
 }
 
 
-[3] Executando PUT para atualizar todos os dados do Veículo ID 3...
+[3] Executando PUT para atualizar todos os dados do Veículo ID 4...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot PUT /api/v1/veiculos/4</pre>
+</body>
+</html>
+
+
+[4] Executando DELETE para remover o Veículo ID 5...
+{
+  "mensagem": "Veiculo ID 5 removido com sucesso."
+}
+
+
+[5] Executando GET para listar a frota final...
+[
+  {
+    "id": 1,
+    "placa": "ABC-1234",
+    "montadora": "Scania",
+    "modelo": "R450",
+    "status": "DISPONIVEL"
+  },
+  {
+    "id": 2,
+    "placa": "XYZ-9876",
+    "montadora": "Mercedes-Benz",
+    "modelo": "Actros",
+    "status": "EM_ROTA"
+  },
+  {
+    "id": 3,
+    "placa": "DEF-5678",
+    "montadora": "Volvo",
+    "modelo": "FH540",
+    "status": "DISPONIVEL"
+  },
+  {
+    "id": 4,
+    "placa": "DEF-5678",
+    "montadora": "Volvo",
+    "modelo": "FH540",
+    "status": "DISPONIVEL"
+  }
+]
+
+
+=========================================
+Testes finalizados com sucesso!
